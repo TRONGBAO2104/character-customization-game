@@ -57,6 +57,61 @@ body {
   justify-content: center; */
 }
 
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  .character {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character .left-column .character-avatar .avatar-img img {
+    position: absolute;
+    left: calc(50% - 130px);
+  }
+
+  .character-avatar .button {
+    position: absolute;
+    left: calc(50% - 140px);
+    bottom: 10%;
+    width: 200px;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .character .left-column {
+    display: flex;
+    justify-content: center;
+  }
+
+  .character {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character .left-column .character-avatar {
+    position: relative;
+    left: 17%;
+    width: 500px;
+  }
+
+  .character .left-column .character-avatar .avatar-img img {
+    position: absolute;
+    left: calc(50% - 130px);
+  }
+
+  .character-avatar .button {
+    position: absolute;
+    left: calc(50% - 140px);
+    bottom: 10%;
+    width: 200px;
+  }
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1024px) {
+}
+
 .character .left-column .character-avatar {
   background-color: #fff;
   border: 15px solid #0baf94;
@@ -72,9 +127,6 @@ body {
 
 .character .left-column .character-avatar .avatar-img {
   height: 280px;
-  /* position: relative; */
-  /* position: sticky;
-  top: calc(50% - 205px); */
   width: 260px;
 }
 
@@ -116,6 +168,10 @@ body {
 }
 
 .character .left-column .character-avatar .avatar-img img .character-glasses {
+  z-index: 3;
+}
+
+.character .left-column .character-avatar .avatar-img img .character-hats {
   z-index: 3;
 }
 
@@ -165,6 +221,7 @@ body {
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin: 10px 0;
   padding: 20px;
@@ -210,15 +267,6 @@ body {
   .character-custom
   .list-custom
   .list-custom-detail
-  .unselected {
-  background-color: hotpink;
-}
-
-.character
-  .right-column
-  .character-custom
-  .list-custom
-  .list-custom-detail
   .square
   .character-body-min {
   height: 60px;
@@ -248,34 +296,6 @@ body {
   .list-custom
   .list-custom-detail
   .square
-  .character-layer1-min {
-  height: 60px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.character
-  .right-column
-  .character-custom
-  .list-custom
-  .list-custom-detail
-  .square
-  .character-layer2-min {
-  height: 60px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.character
-  .right-column
-  .character-custom
-  .list-custom
-  .list-custom-detail
-  .square
   .character-hair-min {
   height: 60px;
   top: 60%;
@@ -293,6 +313,62 @@ body {
   .character-mouths-min {
   height: 150px;
   top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.character
+  .right-column
+  .character-custom
+  .list-custom
+  .list-custom-detail
+  .square
+  .character-glasses-min {
+  height: 90px;
+  top: 70%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.character
+  .right-column
+  .character-custom
+  .list-custom
+  .list-custom-detail
+  .square
+  .character-hats-min {
+  height: 70px;
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.character
+  .right-column
+  .character-custom
+  .list-custom
+  .list-custom-detail
+  .square
+  .character-layer1-min {
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.character
+  .right-column
+  .character-custom
+  .list-custom
+  .list-custom-detail
+  .square
+  .character-layer2-min {
+  height: 60px;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);

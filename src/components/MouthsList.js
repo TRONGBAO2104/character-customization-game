@@ -2,11 +2,10 @@ import React from "react";
 import MouthsDetail from "./MouthsDetail";
 
 function MouthsList({
-  selected,
   mouthsItems,
   handleMouthsImgChange,
-  setSelected,
-  handleSelect,
+  selectedMouths,
+  setSelectedMouths,
 }) {
   return (
     <div className="list-custom">
@@ -14,12 +13,11 @@ function MouthsList({
       <div className="list-custom-detail">
         {mouthsItems.map((mouths) => (
           <MouthsDetail
-            setSelected={setSelected}
-            selected={selected}
             key={mouths.id}
             mouths={mouths}
             handleMouthsImgChange={handleMouthsImgChange}
-            handleSelect={handleSelect}
+            selectedMouths={selectedMouths}
+            setSelectedMouths={setSelectedMouths}
           />
         ))}
       </div>

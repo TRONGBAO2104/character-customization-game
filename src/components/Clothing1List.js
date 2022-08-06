@@ -2,8 +2,8 @@ import React from "react";
 import Clothing1Detail from "./Clothing1Detail";
 
 function Clothing1List({
-  selected,
-  setSelected,
+  selectedClothes1,
+  setSelectedClothes1,
   clothes1Items,
   handleClothing1ImgChange,
 }) {
@@ -13,8 +13,8 @@ function Clothing1List({
       <div className="list-custom-detail">
         {clothes1Items.map((clothes1) => (
           <Clothing1Detail
-            setSelected={setSelected}
-            selected={selected}
+            selectedClothes1={selectedClothes1}
+            setSelectedClothes1={setSelectedClothes1}
             key={clothes1.id}
             clothes1={clothes1}
             handleClothing1ImgChange={handleClothing1ImgChange}

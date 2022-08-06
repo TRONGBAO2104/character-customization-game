@@ -6,7 +6,7 @@ function EyesDetail({
   selectedEyes,
   setSelectedEyes,
 }) {
-  console.log(selectedEyes);
+  // console.log(selectedEyes);
   return (
     <div
       // className={`square ${selected === body.id ? "selected" : ""}`}

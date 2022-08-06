@@ -1,18 +1,20 @@
 import React from "react";
 
 function Clothing1Detail({
-  selected,
-  setSelected,
+  selectedClothes1,
+  setSelectedClothes1,
   clothes1,
   handleClothing1ImgChange,
 }) {
   return (
     <div
-      className={`square ${selected === clothes1.id ? "selected" : ""}`}
+      className={`square ${
+        selectedClothes1.id === clothes1.id ? "selected" : ""
+      }`}
       key={clothes1.id}
       onClick={() => {
         handleClothing1ImgChange(clothes1);
-        setSelected(clothes1.id);
+        setSelectedClothes1(clothes1);
       }}
     >
       <img

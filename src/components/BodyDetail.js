@@ -6,7 +6,7 @@ function BodyDetail({
   selectedBody,
   setSelectedBody,
 }) {
-  console.log(">>> selectedBody", selectedBody);
+  // console.log(">>> selectedBody", selectedBody);
   return (
     <div
       // className={`square ${selected === body.id ? "selected" : ""}`}

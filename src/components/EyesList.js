@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import EyesDetail from "./EyesDetail";
 
-function EyesList({ eyesItems, handleEyesImgChange }) {
-  const [selectedEyes, setSelectedEyes] = useState(eyesItems[0].id);
+function EyesList({
+  eyesItems,
+  handleEyesImgChange,
+  selectedEyes,
+  setSelectedEyes,
+}) {
   return (
     <div className="list-custom">
       <h3>Eyes</h3>
@@ -12,7 +16,7 @@ function EyesList({ eyesItems, handleEyesImgChange }) {
             key={eyes.id}
             eyes={eyes}
             handleEyesImgChange={handleEyesImgChange}
-            selectedEye={selectedEyes}
+            selectedEyes={selectedEyes}
             setSelectedEyes={setSelectedEyes}
           />
         ))}

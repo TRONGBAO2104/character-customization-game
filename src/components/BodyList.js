@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import BodyDetail from "./BodyDetail";
 
-function BodyList({ bodyItems, handleBodyImgChange }) {
-  const [selectedBody, setSelectedBody] = useState(bodyItems[0].id);
+function BodyList({
+  bodyItems,
+  handleBodyImgChange,
+  selectedBody,
+  setSelectedBody,
+}) {
   return (
     <div className="list-custom">
       <h3>Body</h3>

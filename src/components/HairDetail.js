@@ -1,12 +1,18 @@
 import React from "react";
 
-function HairDetail({ selected, setSelected, hair, handleHairImgChange }) {
+function HairDetail({
+  hair,
+  handleHairImgChange,
+  selectedHair,
+  setSelectedHair,
+}) {
   return (
     <div
-      className={`square ${selected === hair.id ? "selected" : ""}`}
+      // className={`square ${selected === hair.id ? "selected" : ""}`}
+      className={`square ${selectedHair.id === hair.id ? "selected" : ""}`}
       onClick={() => {
         handleHairImgChange(hair);
-        setSelected(hair.id);
+        setSelectedHair(hair);
       }}
     >
       <img
