@@ -1,7 +1,15 @@
-# CHARACTER CUSTOMIZATION APP (NOT FINISH)
+# CHARACTER CUSTOMIZATION GAME
 
-**NEED OPTIMIZE:**
+**Demo App:** https://character-customization-app-by-baobao.netlify.app/
 
-1. Code line from App.js, much more for loop
-2. Must add effect when user click any item --> background change
-3. Responsive for more width screen
+**Description:**
+- User sees a pre-selected avatar.
+- User sees lists of parts for body, clothing (2 layers), eyebrows, eyes, hair, and mouths. Note: Nose is pre-set as there is only one variation.
+- User can select a different part and the avatar will reflect the change when the user clicks on a different item.
+- User can click a RANDOMIZE button to generate a new character with random features.
+- In first loading browser, the page will run random 1 character custome
+
+**Using:** ReactJS (no framework or library)
+
+**Responsive web desing:** Multiple screen sizes for Mobile, Tablet, Laptop, PC
+
